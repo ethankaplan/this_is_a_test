@@ -1,0 +1,59 @@
+mkdir death_star
+touch darth_vader.txt princess_leia.txt storm_trooper.txt
+
+mkdir galaxy_far_far_away
+galaxy_far_far_away Ethan$ mkdir tatooine
+galaxy_far_far_away Ethan$ cd tatooine/
+tatooine Ethan$ touch luke.txt ben_kenobi.txt
+
+tatooine Ethan$ mkdir millenium_falcon
+tatooine Ethan$ cd millenium_falcon/
+millenium_falcon Ethan$ touch han_solo.txt chewbaca.txt
+
+tatooine Ethan$ mv ben_kenobi.txt obi_wan.txt
+
+death_star Ethan$ cp storm_trooper.txt ../galaxy_far_far_away/tatooine/
+
+galaxy_far_far_away Ethan$ mv luke.txt tatooine/millenium_falcon/
+galaxy_far_far_away Ethan$ mv obi_wan.txt tatooine/millenium_falcon/
+
+tatooine Ethan$ mv millenium_falcon/ ..
+
+galaxy_far_far_away Ethan$ mv millenium_falcon/ ../death_star/
+
+death_star Ethan$ mv princess_leia.txt millenium_falcon/
+
+millenium_falcon Ethan$ rm obi_wan.txt 
+
+galaxy_far_far_away Ethan$ mkdir yarvin_4
+
+galaxy_far_far_away Ethan$ mv millenium_falcon/ yarvin_4/
+
+yarvin_4 Ethan$ mkdir x_wing
+
+yarvin_4 Ethan$ mv millenium_falcon/princess_leia.txt .
+yarvin_4 Ethan$ mv millenium_falcon/luke.txt x_wing/
+
+yarvin_4 Ethan$ mv millenium_falcon/ ..
+yarvin_4 Ethan$ mv x_wing/ ..
+
+death_star Ethan$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+
+death_star Ethan$ mv darth_vader.txt tie_fighter_1
+
+death_star Ethan$ cp storm_trooper.txt tie_fighter_2
+death_star Ethan$ cp storm_trooper.txt tie_fighter_3
+
+death_star Ethan$ mv tie_fighter_1 ../galaxy_far_far_away/
+death_star Ethan$ mv tie_fighter_2 ../galaxy_far_far_away/
+death_star Ethan$ mv tie_fighter_3 ../galaxy_far_far_away/
+
+galaxy_far_far_away Ethan$ rm -r tie_fighter_2
+galaxy_far_far_away Ethan$ rm -r tie_fighter_3
+
+x_wing Ethan$ touch the_force.txt
+
+star_wars Ethan$ rm -r death_star/
+
+galaxy_far_far_away Ethan$ mv x_wing/ yarvin_4/
+galaxy_far_far_away Ethan$ mv millenium_falcon/ yarvin_4/
